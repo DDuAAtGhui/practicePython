@@ -1,0 +1,20 @@
+import random
+while True:
+  try:
+    how_much = input("How many lotteries?\n")
+    how_much = int(''.join(filter(str.isdigit, how_much)))
+    break
+  except ValueError:
+    print("Invalid input. At least number must be inputed")
+lottnum = 0
+a = 0
+print("\n=========================\n\nLottery Number\n")
+while how_much != a:
+  a += 1
+  lottnum = random.sample(range(1, 46), 6)
+  for cycle in sorted(lottnum):
+    print(cycle, end=" ")
+  print("\n")
+  if a % 5 == 0:
+    print("=========================")
+    print("=========================\n")
