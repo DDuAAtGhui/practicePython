@@ -5,7 +5,7 @@ while True:
     how_much = int(''.join(filter(str.isdigit, how_much)))
     break
   except ValueError:
-    print("Invalid input. At least number must be inputed")
+    print("Invalid input. At least number must be input")
 lottnum = 0
 a = 0
 print("\n=========================\n\nLottery Number\n")
